@@ -20,7 +20,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header);
+  scroll-padding-top: calc(var(--header) + 16px);
   background: var(--off);
   overflow-x: clip;
 }
@@ -32,7 +32,6 @@ body {
   font: 400 1.0625rem/1.7 Manrope, "Segoe UI", sans-serif;
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
-  overflow-x: clip;
 }
 
 img { max-width: 100%; display: block; }
@@ -828,15 +827,18 @@ footer a:hover { text-decoration: underline; }
 
 ::selection { background: #d7e4d4; color: var(--forest); }
 
+section[id],
+h3[id] {
+  scroll-margin-top: calc(var(--header) + 16px);
+}
+
 .js .reveal {
   opacity: 0;
-  transform: translateY(18px);
 }
 
 .js .reveal.is-in {
   opacity: 1;
-  transform: none;
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 0.7s ease;
 }
 
 .hero-copy { animation: rise 0.8s ease both; }
@@ -918,6 +920,6 @@ footer a:hover { text-decoration: underline; }
   .btn, .card, .answer, summary::after, header { transition: none; }
   .card:hover { transform: none; }
   .hero-copy, .hero-photo { animation: none; }
-  .js .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; }
   .js .reveal.is-in { transition: none; }
 }
