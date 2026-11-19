@@ -205,7 +205,7 @@ nav {
   gap: 22px;
 }
 
-.hero-card img { width: min(168px, 46%); height: auto; }
+.hero-card img { width: min(100%, 420px); height: auto; }
 
 .tagline {
   margin: 0;
@@ -436,6 +436,25 @@ section { padding: 84px 0; }
 }
 
 .role { color: var(--muted); font-size: 0.92rem; margin: 0 0 10px; }
+
+.kicker {
+  margin: 12px 0 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #5d7a64;
+}
+
+h3[id] { scroll-margin-top: 12px; }
+
+.subhead {
+  margin: 46px 0 8px;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  letter-spacing: -0.03em;
+}
 .person p { color: var(--muted); font-size: 0.98rem; }
 
 .vals {
