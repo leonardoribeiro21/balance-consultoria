@@ -437,6 +437,9 @@ section { padding: 84px 0; }
 
 .role { color: var(--muted); font-size: 0.92rem; margin: 0 0 10px; }
 
+.sobre p { max-width: 68ch; }
+.sobre .values { max-width: none; margin-bottom: 0; }
+
 .kicker {
   margin: 12px 0 6px;
   font-size: 0.72rem;
