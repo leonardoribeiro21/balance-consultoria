@@ -16,8 +16,10 @@
 <link rel="icon" type="image/png" href="assets/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,460&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/fotos/hero.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <a class="skip" href="#inicio">Ir para o conteúdo</a>
@@ -33,16 +35,18 @@
 <li><a href="#equipe">Sócios</a></li>
 <li><a href="#comunicacao">Comunicação</a></li>
 <li><a href="#cultura">Missão e valores</a></li>
+<li class="only-mobile"><a class="btn" href="#contato">Contato</a></li>
 </ul>
-<a class="btn nav-cta" href="#contato">Fale conosco</a>
+<a class="btn nav-cta" href="#contato">Contato</a>
 </nav>
 </header>
 
 <main id="inicio">
 <section class="hero">
-<div class="wrap">
-<div class="hero-grid">
-<div>
+<div class="orb orb-a" aria-hidden="true"></div>
+<div class="orb orb-b" aria-hidden="true"></div>
+<div class="wrap hero-grid">
+<div class="hero-copy">
 <p class="eyebrow">Pessoas · Equilíbrio · Resultados</p>
 <h1>Pessoas certas, resultados maiores.</h1>
 <p class="lead">A Balance Consultoria ajuda empresas a construir ambientes de trabalho mais saudáveis, com diagnóstico, planejamento e implementação de programas de Qualidade de Vida no Trabalho (QVT).</p>
@@ -52,53 +56,101 @@
 <a class="btn alt" href="#servicos">Conhecer os serviços</a>
 </div>
 </div>
-<aside class="hero-card" aria-label="Logomarca e nome da empresa">
-<img src="assets/logo-lockup.png" alt="Balance Consultoria" width="632" height="220">
-<p class="tagline">Equilíbrio é o que nos move.</p>
-</aside>
+<figure class="hero-photo">
+<img src="assets/fotos/hero.jpg" alt="Duas pessoas em um ambiente de trabalho acolhedor, com luz natural, plantas e madeira." width="1600" height="1067">
+<figcaption>Equilíbrio é o que nos move.</figcaption>
+</figure>
 </div>
+<div class="wrap">
 <ul class="principles">
-<li><span class="bubble forest" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="9" cy="8" r="2.1"/><circle cx="15.6" cy="9" r="1.7"/><path d="M4.6 18.4c.7-2.7 2.5-4.1 4.4-4.1s3.7 1.4 4.4 4.1"/><path d="M13.2 18.4c.4-1.9 1.6-3.1 3-3.1 1.4 0 2.5 1.1 3.1 3.1"/></svg></span>Pessoas</li>
-<li><span class="bubble sage" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.4 19 6.1v6.1c0 3.9-2.8 6.5-7 8-4.2-1.5-7-4.1-7-8V6.1L12 3.4z"/><path d="M12 8.4v6.2M8.9 11.5h6.2"/></svg></span>Saúde</li>
-<li><span class="bubble sand" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M5 19V11M10 19V7M15 19v-5M20 19V9"/></svg></span>Resultados</li>
-<li><span class="bubble line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="3.1"/><path d="M12 3.5v2.2M12 18.3v2.2M3.5 12h2.2M18.3 12h2.2M5.8 5.8l1.6 1.6M16.6 16.6l1.6 1.6M18.2 5.8l-1.6 1.6M7.4 16.6l-1.6 1.6"/></svg></span>Equilíbrio</li>
+<li class="tone-sage">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="2.1"/><circle cx="15.6" cy="9.1" r="1.7"/><path d="M4.6 18.4c.7-2.7 2.5-4.1 4.4-4.1s3.7 1.4 4.4 4.1"/><path d="M13.2 18.4c.4-1.9 1.6-3.1 3-3.1 1.4 0 2.5 1.1 3.1 3.1"/></svg></span>
+<div><strong>Pessoas</strong><span>Desenvolvimento e valorização humana.</span></div>
+</li>
+<li>
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6 18.8 6.2v5.8c0 3.7-2.6 6.2-6.8 7.6-4.2-1.4-6.8-3.9-6.8-7.6V6.2L12 3.6z"/><path d="M12 8.6v5.6M9.2 11.4h5.6"/></svg></span>
+<div><strong>Saúde</strong><span>Programas de saúde e bem-estar.</span></div>
+</li>
+<li>
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 19V11M10 19V7M15 19v-5M20 19V9"/></svg></span>
+<div><strong>Resultados</strong><span>Engajamento e produtividade.</span></div>
+</li>
+<li class="tone-sand">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 3.6v2.1M12 18.3v2.1M3.6 12h2.1M18.3 12h2.1M6 6l1.5 1.5M16.5 16.5 18 18M18 6l-1.5 1.5M7.5 16.5 6 18"/></svg></span>
+<div><strong>Equilíbrio</strong><span>Bem-estar e ambientes mais saudáveis.</span></div>
+</li>
 </ul>
 </div>
 </section>
 
-<section id="sobre" class="sand">
+<section id="sobre" class="reveal">
 <div class="wrap sobre">
+<figure class="sobre-photo">
+<img src="assets/fotos/mesa.jpg" alt="Três pessoas conversando ao redor de uma mesa de madeira, em um ambiente de trabalho acolhedor." width="1400" height="933" loading="lazy">
+</figure>
+<div class="sobre-copy">
 <h2>Sobre a Balance</h2>
 <p>A Balance Consultoria nasceu para transformar ambientes de trabalho por meio de diagnósticos, estratégias e soluções personalizadas em bem-estar e qualidade de vida no trabalho. Acreditamos que o equilíbrio entre o bem-estar das pessoas e o desempenho das empresas é o caminho para uma cultura corporativa mais humana, saudável e sustentável.</p>
 <p>Nossa visão é ser referência nacional em QVT, reconhecida pela excelência técnica, inovação e ética, construindo relacionamentos duradouros e resultados que perduram.</p>
 <p class="kicker">Nossos valores</p>
 <p class="values"><span class="pill">Valorização das pessoas</span><span class="pill">Ética e transparência</span><span class="pill">Excelência</span><span class="pill">Inovação</span><span class="pill">Compromisso com resultados</span><span class="pill">Empatia</span><span class="pill">Sustentabilidade organizacional</span><span class="pill">Aprendizado contínuo</span></p>
 </div>
+</div>
 </section>
 
-<section id="servicos" class="paper">
+<section id="servicos" class="reveal">
 <div class="wrap">
 <h2>Serviços da consultoria</h2>
 <p class="intro">Acompanhamos a empresa em todo o ciclo: do diagnóstico da realidade organizacional ao monitoramento dos resultados.</p>
-<div class="grid">
-<article class="card"><span class="index">01</span><h3>Diagnóstico Organizacional</h3><ul><li>Pesquisa de clima organizacional</li><li>Diagnóstico de QVT</li><li>Avaliação de riscos psicossociais</li><li>Engajamento, liderança e comunicação interna</li></ul></article>
-<article class="card"><span class="index">02</span><h3>Planejamento Estratégico</h3><ul><li>Programas e políticas de bem-estar</li><li>Programas de saúde mental</li><li>Equilíbrio entre vida pessoal e profissional</li><li>Definição de KPIs e cronogramas</li></ul></article>
-<article class="card"><span class="index">03</span><h3>Desenvolvimento de Pessoas</h3><ul><li>Liderança humanizada</li><li>Inteligência emocional e gestão do estresse</li><li>Gestão de conflitos</li><li>Diversidade e inclusão</li></ul></article>
-<article class="card"><span class="index">04</span><h3>Implementação de Projetos</h3><ul><li>Ergonomia e prevenção do burnout</li><li>Campanhas e semanas temáticas de bem-estar</li><li>Programas de reconhecimento</li><li>Escuta ativa e integração entre equipes</li></ul></article>
-<article class="card"><span class="index">05</span><h3>Monitoramento e Acompanhamento</h3><ul><li>Monitoramento de indicadores</li><li>Reavaliação do clima</li><li>Relatórios gerenciais</li><li>Avaliação da efetividade dos programas</li></ul></article>
-<article class="card"><span class="index">06</span><h3>Conformidade e Gestão Organizacional</h3><ul><li>Adequação às normas de saúde e segurança</li><li>Prevenção de riscos psicossociais</li><li>Responsabilidade social corporativa</li><li>Ações ESG ligadas ao capital humano</li></ul></article>
+<div class="grid services">
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="6.2"/><path d="m16 16 4 4"/></svg></span>
+<span class="index">01</span>
+<h3>Diagnóstico Organizacional</h3>
+<ul><li>Pesquisa de clima organizacional</li><li>Diagnóstico de QVT</li><li>Avaliação de riscos psicossociais</li><li>Engajamento, liderança e comunicação interna</li></ul>
+</article>
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18.5h16"/><path d="M6 18.5 9.2 8.8l3.1 5.2 2.2-3.4L18 18.5"/></svg></span>
+<span class="index">02</span>
+<h3>Planejamento Estratégico</h3>
+<ul><li>Programas e políticas de bem-estar</li><li>Programas de saúde mental</li><li>Equilíbrio entre vida pessoal e profissional</li><li>Definição de KPIs e cronogramas</li></ul>
+</article>
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="9" r="2.2"/><circle cx="16" cy="9.4" r="1.8"/><path d="M3.8 18.2c.6-2.6 2.3-3.9 4.2-3.9s3.5 1.3 4.1 3.9"/><path d="M12.6 18.2c.4-1.8 1.5-2.9 2.9-2.9 1.5 0 2.6 1.1 3.2 2.9"/></svg></span>
+<span class="index">03</span>
+<h3>Desenvolvimento de Pessoas</h3>
+<ul><li>Liderança humanizada</li><li>Inteligência emocional e gestão do estresse</li><li>Gestão de conflitos</li><li>Diversidade e inclusão</li></ul>
+</article>
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><path d="M5 19h14"/></svg></span>
+<span class="index">04</span>
+<h3>Implementação de Projetos</h3>
+<ul><li>Ergonomia e prevenção do burnout</li><li>Campanhas e semanas temáticas de bem-estar</li><li>Programas de reconhecimento</li><li>Escuta ativa e integração entre equipes</li></ul>
+</article>
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 16.5 8.2 12l3 2.6L20 7"/><path d="M14.5 7H20v5.5"/></svg></span>
+<span class="index">05</span>
+<h3>Monitoramento e Acompanhamento</h3>
+<ul><li>Monitoramento de indicadores</li><li>Reavaliação do clima</li><li>Relatórios gerenciais</li><li>Avaliação da efetividade dos programas</li></ul>
+</article>
+<article class="card">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.4 19 6v6.2c0 4-2.9 6.6-7 8.1-4.1-1.5-7-4.1-7-8.1V6l7-2.6z"/></svg></span>
+<span class="index">06</span>
+<h3>Conformidade e Gestão Organizacional</h3>
+<ul><li>Adequação às normas de saúde e segurança</li><li>Prevenção de riscos psicossociais</li><li>Responsabilidade social corporativa</li><li>Ações ESG ligadas ao capital humano</li></ul>
+</article>
 </div>
 <h3 class="subhead">Texto, vídeos, podcasts e imagens</h3>
 <p class="intro">Os serviços são descritos em texto e também apresentados em vídeo, podcast e imagens.</p>
 <div class="media" aria-label="Formatos dos serviços">
 <article class="card media-card"><div class="media-visual" aria-hidden="true"><span class="play"></span></div><h3>Vídeo</h3><p>Em breve, o vídeo institucional de apresentação da Balance.</p></article>
-<article class="card media-card"><div class="media-visual" aria-hidden="true"><span class="waves"><span></span><span></span><span></span><span></span><span></span><span></span></span></div><h3>Podcast</h3><p>Conversas sobre QVT. Em breve, o episódio sobre saúde mental e equilíbrio no trabalho.</p></article>
-<article class="card media-card"><div class="media-visual" aria-hidden="true"><span class="frames"><span></span><span></span><span></span></span></div><h3>Imagens</h3><p>Em breve, registros de workshops, semanas temáticas e materiais dos serviços.</p></article>
+<article class="card media-card"><div class="media-visual sand" aria-hidden="true"><span class="waves"><span></span><span></span><span></span><span></span><span></span><span></span></span></div><h3>Podcast</h3><p>Conversas sobre QVT. Em breve, o episódio sobre saúde mental e equilíbrio no trabalho.</p></article>
+<article class="card media-card"><div class="media-visual sage" aria-hidden="true"><span class="frames"><span></span><span></span><span></span></span></div><h3>Imagens</h3><p>Em breve, registros de workshops, semanas temáticas e materiais dos serviços.</p></article>
 </div>
 </div>
 </section>
 
-<section class="quote" aria-label="Conceito da marca">
+<section class="quote reveal" aria-label="Conceito da marca">
 <div class="wrap">
 <div class="mark" role="img" aria-label="Símbolo da Balance"></div>
 <p>Cuidar das pessoas também é uma estratégia de negócio.</p>
@@ -106,41 +158,57 @@
 </div>
 </section>
 
-<section id="metodo" class="sand">
+<section id="metodo" class="reveal">
 <div class="wrap">
 <h2>Nosso método de diagnóstico</h2>
 <p class="intro">Nosso instrumento combina dois modelos consagrados da literatura de QVT. O primeiro avalia as condições objetivas do trabalho; o segundo, o bem-estar percebido pelos colaboradores.</p>
 <div class="models">
-<article class="card">
+<article class="method">
+<p class="kicker">Modelo 01</p>
 <h3>Walton (1973): condições do trabalho</h3>
 <p>Oito critérios para avaliar a organização:</p>
-<span class="pill">Compensação justa</span><span class="pill">Condições de trabalho</span><span class="pill">Uso de capacidades</span><span class="pill">Crescimento e segurança</span><span class="pill">Integração social</span><span class="pill">Constitucionalismo</span><span class="pill">Trabalho e espaço total de vida</span><span class="pill">Relevância social</span>
+<ol class="steps">
+<li><span>01</span>Compensação justa</li>
+<li><span>02</span>Condições de trabalho</li>
+<li><span>03</span>Uso de capacidades</li>
+<li><span>04</span>Crescimento e segurança</li>
+<li><span>05</span>Integração social</li>
+<li><span>06</span>Constitucionalismo</li>
+<li><span>07</span>Trabalho e espaço total de vida</li>
+<li><span>08</span>Relevância social</li>
+</ol>
 </article>
-<article class="card">
+<article class="method method-alt">
+<p class="kicker">Modelo 02</p>
 <h3>Limongi-França (1996; 2004): BPSO-96</h3>
 <p>Quatro dimensões do bem-estar do colaborador:</p>
-<span class="pill">Biológica</span><span class="pill">Psicológica</span><span class="pill">Social</span><span class="pill">Organizacional</span>
+<ol class="steps steps-wide">
+<li><span>B</span>Biológica</li>
+<li><span>P</span>Psicológica</li>
+<li><span>S</span>Social</li>
+<li><span>O</span>Organizacional</li>
+</ol>
 <p class="note">Para a autora, QVT é uma competência de gestão estratégica, não um conjunto de benefícios isolados.</p>
 </article>
 </div>
 </div>
 </section>
 
-<section id="equipe">
+<section id="equipe" class="reveal">
 <div class="wrap">
 <h2>Sócios</h2>
 <p class="intro">Foto, mini currículo e competências de cada sócio. Cinco profissionais com atuação complementar em gestão, finanças, recursos humanos e marcas.</p>
 <div class="grid team">
-<article class="card person"><img class="ph" src="assets/equipe/rogerio-marques.jpg" alt="Rogério Marques" width="512" height="512"><h3>Rogério Marques</h3><p class="role">Diretor-Geral</p><p class="kicker">Mini currículo</p><p>Lidera a estratégia da consultoria e conduz a relação com os clientes, com foco na gestão de pessoas e processos.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Liderança estratégica</span><span class="pill">Visão de negócio</span><span class="pill">Gestão de pessoas e processos</span><span class="pill">Tomada de decisão</span></div></article>
-<article class="card person"><img class="ph" src="assets/equipe/emanuel-franca.jpg" alt="Emanuel França" width="512" height="512"><h3>Emanuel França</h3><p class="role">Gerente Administrativo-Financeiro</p><p class="kicker">Mini currículo</p><p>Responsável pela saúde financeira e pela organização administrativa que sustentam a operação.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Gestão financeira</span><span class="pill">Controle administrativo</span><span class="pill">Planejamento e organização</span><span class="pill">Suporte à operação</span></div></article>
-<article class="card person"><img class="ph" src="assets/equipe/lara-rodrigues.jpg" alt="Lara Rodrigues" width="512" height="512"><h3>Lara Rodrigues</h3><p class="role">Gerente de Recursos Humanos</p><p class="kicker">Mini currículo</p><p>Conduz os diagnósticos de clima e os programas de desenvolvimento das equipes dos clientes.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Gestão de pessoas</span><span class="pill">Recrutamento e seleção</span><span class="pill">Desenvolvimento e treinamento</span><span class="pill">Clima organizacional</span></div></article>
-<article class="card person"><img class="ph" src="assets/equipe/thiago-carvalho.jpg" alt="Thiago Carvalho" width="512" height="512"><h3>Thiago Carvalho</h3><p class="role">Consultor de RH</p><p class="kicker">Mini currículo</p><p>Apoia a execução dos projetos, dos treinamentos e dos processos de RH nas empresas atendidas.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Recrutamento e seleção</span><span class="pill">Apoio em treinamentos</span><span class="pill">Suporte à gestão de pessoas</span><span class="pill">Processos de RH</span></div></article>
-<article class="card person"><img class="ph" src="assets/equipe/kailane-neves.jpg" alt="Kailane Neves" width="512" height="512"><h3>Kailane Neves</h3><p class="role">Gerente de Marketing e Relacionamento</p><p class="kicker">Mini currículo</p><p>Cuida da comunicação, do relacionamento com os clientes e do fortalecimento da marca Balance.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Comunicação estratégica</span><span class="pill">Marketing digital</span><span class="pill">Relacionamento com clientes</span><span class="pill">Fortalecimento da marca</span></div></article>
+<article class="card person"><img class="ph" src="assets/equipe/rogerio-marques.jpg" alt="Rogério Marques" width="512" height="512" loading="lazy"><h3>Rogério Marques</h3><p class="role">Diretor-Geral</p><p class="kicker">Mini currículo</p><p>Lidera a estratégia da consultoria e conduz a relação com os clientes, com foco na gestão de pessoas e processos.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Liderança estratégica</span><span class="pill">Visão de negócio</span><span class="pill">Gestão de pessoas e processos</span><span class="pill">Tomada de decisão</span></div></article>
+<article class="card person"><img class="ph" src="assets/equipe/emanuel-franca.jpg" alt="Emanuel França" width="512" height="512" loading="lazy"><h3>Emanuel França</h3><p class="role">Gerente Administrativo-Financeiro</p><p class="kicker">Mini currículo</p><p>Responsável pela saúde financeira e pela organização administrativa que sustentam a operação.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Gestão financeira</span><span class="pill">Controle administrativo</span><span class="pill">Planejamento e organização</span><span class="pill">Suporte à operação</span></div></article>
+<article class="card person"><img class="ph" src="assets/equipe/lara-rodrigues.jpg" alt="Lara Rodrigues" width="512" height="512" loading="lazy"><h3>Lara Rodrigues</h3><p class="role">Gerente de Recursos Humanos</p><p class="kicker">Mini currículo</p><p>Conduz os diagnósticos de clima e os programas de desenvolvimento das equipes dos clientes.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Gestão de pessoas</span><span class="pill">Recrutamento e seleção</span><span class="pill">Desenvolvimento e treinamento</span><span class="pill">Clima organizacional</span></div></article>
+<article class="card person"><img class="ph" src="assets/equipe/thiago-carvalho.jpg" alt="Thiago Carvalho" width="512" height="512" loading="lazy"><h3>Thiago Carvalho</h3><p class="role">Consultor de RH</p><p class="kicker">Mini currículo</p><p>Apoia a execução dos projetos, dos treinamentos e dos processos de RH nas empresas atendidas.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Recrutamento e seleção</span><span class="pill">Apoio em treinamentos</span><span class="pill">Suporte à gestão de pessoas</span><span class="pill">Processos de RH</span></div></article>
+<article class="card person"><img class="ph" src="assets/equipe/kailane-neves.jpg" alt="Kailane Neves" width="512" height="512" loading="lazy"><h3>Kailane Neves</h3><p class="role">Gerente de Marketing e Relacionamento</p><p class="kicker">Mini currículo</p><p>Cuida da comunicação, do relacionamento com os clientes e do fortalecimento da marca Balance.</p><p class="kicker">Competências</p><div class="pills"><span class="pill">Comunicação estratégica</span><span class="pill">Marketing digital</span><span class="pill">Relacionamento com clientes</span><span class="pill">Fortalecimento da marca</span></div></article>
 </div>
 </div>
 </section>
 
-<section id="comunicacao" class="sand">
+<section id="comunicacao" class="reveal">
 <div class="wrap">
 <h2>Comunicação</h2>
 <p class="intro">Canais de acesso do cliente e respostas às perguntas mais frequentes.</p>
@@ -153,24 +221,37 @@
 <article class="card"><h3>Atendimento</h3><p>Segunda a sexta, das 9h às 18h, presencial ou online.</p></article>
 </div>
 <h3 id="faq" class="subhead">FAQ do cliente</h3>
-<details><summary>O que é Qualidade de Vida no Trabalho (QVT)?</summary><p>É um campo de estudo e de gestão que busca melhorar a relação entre o indivíduo, o trabalho e a organização, olhando além do salário para as condições físicas, psicológicas, sociais e organizacionais do ambiente de trabalho.</p></details>
-<details><summary>Por onde a consultoria começa?</summary><p>Pelo diagnóstico. Avaliamos o clima, os riscos psicossociais, o engajamento e a liderança, e só depois propomos um plano de ação personalizado.</p></details>
-<details><summary>A Balance atende empresas de qualquer porte?</summary><p>Sim. Adaptamos os serviços ao porte, ao segmento e à cultura de cada cliente.</p></details>
-<details><summary>Como os resultados são medidos?</summary><p>Por indicadores definidos junto à empresa, como absenteísmo, rotatividade, engajamento e satisfação, acompanhados em relatórios gerenciais e reavaliações periódicas.</p></details>
-<details><summary>A consultoria também implementa os programas?</summary><p>Sim. Acompanhamos a execução das ações, de campanhas de bem-estar a programas de prevenção do burnout, e ajustamos o plano sempre que necessário.</p></details>
-<details><summary>As informações dos colaboradores são confidenciais?</summary><p>Sim. A confidencialidade é parte do nosso valor de Ética e Transparência: os resultados são apresentados de forma consolidada.</p></details>
-<details><summary>Como solicito uma proposta?</summary><p>Pelos canais de acesso acima. Respondemos para agendar uma conversa inicial.</p></details>
+<div class="faq">
+<details><summary>O que é Qualidade de Vida no Trabalho (QVT)?</summary><div class="answer"><p>É um campo de estudo e de gestão que busca melhorar a relação entre o indivíduo, o trabalho e a organização, olhando além do salário para as condições físicas, psicológicas, sociais e organizacionais do ambiente de trabalho.</p></div></details>
+<details><summary>Por onde a consultoria começa?</summary><div class="answer"><p>Pelo diagnóstico. Avaliamos o clima, os riscos psicossociais, o engajamento e a liderança, e só depois propomos um plano de ação personalizado.</p></div></details>
+<details><summary>A Balance atende empresas de qualquer porte?</summary><div class="answer"><p>Sim. Adaptamos os serviços ao porte, ao segmento e à cultura de cada cliente.</p></div></details>
+<details><summary>Como os resultados são medidos?</summary><div class="answer"><p>Por indicadores definidos junto à empresa, como absenteísmo, rotatividade, engajamento e satisfação, acompanhados em relatórios gerenciais e reavaliações periódicas.</p></div></details>
+<details><summary>A consultoria também implementa os programas?</summary><div class="answer"><p>Sim. Acompanhamos a execução das ações, de campanhas de bem-estar a programas de prevenção do burnout, e ajustamos o plano sempre que necessário.</p></div></details>
+<details><summary>As informações dos colaboradores são confidenciais?</summary><div class="answer"><p>Sim. A confidencialidade é parte do nosso valor de Ética e Transparência: os resultados são apresentados de forma consolidada.</p></div></details>
+<details><summary>Como solicito uma proposta?</summary><div class="answer"><p>Pelos canais de acesso acima. Respondemos para agendar uma conversa inicial.</p></div></details>
+</div>
 </div>
 </section>
 
-<section id="cultura">
+<section id="cultura" class="reveal">
 <div class="wrap">
 <h2>Missão, visão e valores</h2>
-<div class="split">
-<article class="card"><h3>Missão</h3><p>Promover a transformação dos ambientes organizacionais por meio de consultorias especializadas em Qualidade de Vida no Trabalho, com diagnósticos, estratégias e soluções personalizadas que equilibram o bem-estar dos colaboradores e o desempenho das empresas.</p></article>
-<article class="card"><h3>Visão</h3><p>Ser referência nacional em QVT, reconhecida pela excelência técnica, inovação e ética, construindo relacionamentos duradouros e resultados que perduram.</p></article>
+<div class="purpose">
+<article>
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="7.2"/><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.2M12 19v2.2M2.8 12h2.2M19 12h2.2"/></svg></span>
+<h3>Missão</h3>
+<p>Promover a transformação dos ambientes organizacionais por meio de consultorias especializadas em Qualidade de Vida no Trabalho, com diagnósticos, estratégias e soluções personalizadas que equilibram o bem-estar dos colaboradores e o desempenho das empresas.</p>
+</article>
+<article class="purpose-mid">
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 12s3.2-6 9-6 9 6 9 6-3.2 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.3"/></svg></span>
+<h3>Visão</h3>
+<p>Ser referência nacional em QVT, reconhecida pela excelência técnica, inovação e ética, construindo relacionamentos duradouros e resultados que perduram.</p>
+</article>
+<article>
+<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.2-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.8-7 9-7 9z"/></svg></span>
+<h3>Valores</h3>
+</article>
 </div>
-<h3 class="subhead">Valores</h3>
 <div class="vals">
 <div><h3>Valorização das Pessoas</h3><p>Respeito, desenvolvimento humano, inclusão e bem-estar em todas as soluções.</p></div>
 <div><h3>Ética e Transparência</h3><p>Integridade, responsabilidade e confidencialidade em cada projeto.</p></div>
@@ -181,6 +262,24 @@
 <div><h3>Sustentabilidade Organizacional</h3><p>Desempenho econômico, responsabilidade social e qualidade de vida.</p></div>
 <div><h3>Aprendizado Contínuo</h3><p>Atualização constante da equipe em gestão de pessoas e bem-estar.</p></div>
 </div>
+</div>
+</section>
+
+<section id="fecho" class="closer" aria-label="Chamada para contato">
+<div class="orb orb-c" aria-hidden="true"></div>
+<div class="wrap closer-grid">
+<div>
+<p class="eyebrow light">Balance Consultoria</p>
+<h2>Vamos transformar seu ambiente de trabalho?</h2>
+<p>Conheça as soluções da Balance Consultoria.</p>
+<a class="btn light" href="mailto:contato@balanceconsultoria.com.br">Entre em contato</a>
+</div>
+<ul class="closer-list">
+<li><span>E-mail</span><a href="mailto:contato@balanceconsultoria.com.br">contato@balanceconsultoria.com.br</a></li>
+<li><span>WhatsApp</span><span class="value">(11) 00000-0000</span></li>
+<li><span>Redes</span><span class="value"><a href="https://www.linkedin.com/company/balanceconsultoria" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/balanceconsultoria" target="_blank" rel="noopener">Instagram</a></span></li>
+<li><span>Horário</span><span class="value">Segunda a sexta, das 9h às 18h</span></li>
+</ul>
 </div>
 </section>
 </main>
@@ -216,6 +315,21 @@ const setOpen = (open) => {
 toggle.addEventListener("click", () => setOpen(!menu.classList.contains("open")));
 menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
 addEventListener("scroll", () => header.classList.toggle("scrolled", scrollY > 8), { passive: true });
+
+const reveal = document.querySelectorAll(".reveal");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reduce || !("IntersectionObserver" in window)) {
+  reveal.forEach((el) => el.classList.add("is-in"));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-in");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  reveal.forEach((el) => observer.observe(el));
+}
 </script>
 </body>
 </html>
