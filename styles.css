@@ -427,20 +427,13 @@ section { padding: 84px 0; }
 .team .pills { margin-top: auto; padding-top: 8px; }
 
 .ph {
-  width: 64px;
-  height: 64px;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  object-fit: cover;
   margin-bottom: 16px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  background: var(--forest);
-  color: var(--off);
+  background: var(--sand);
 }
-
-.ph.sage { background: var(--sage); }
-.ph.sand { background: var(--sand); color: var(--forest); }
 
 .role { color: var(--muted); font-size: 0.92rem; margin: 0 0 10px; }
 .person p { color: var(--muted); font-size: 0.98rem; }
